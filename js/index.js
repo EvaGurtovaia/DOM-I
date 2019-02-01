@@ -61,6 +61,12 @@ let nav = document.querySelector("nav");
 nav.prepend(newElement1);
 newElement1.style.color = "green";
 
+let newElement2 = document.createElement('a')
+newElement2.setAttribute('href', '#')
+newElement2.innerText = 'FAQ'
+nav.append(newElement2);
+newElement2.style.color = "green";
+
 let ctaText = document.getElementsByClassName("cta-text")[0];
 ctaText.getElementsByTagName("h1")[0].innerText = siteContent ["cta"]["h1"];
 ctaText.getElementsByTagName("button")[0].innerText = siteContent["cta"]["button"];
