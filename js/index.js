@@ -54,7 +54,12 @@ navLinks.forEach(function(link, i) {
 navLinks.forEach(function(link){
   link.style.color = "green";
 });
-
+let newElement1 = document.createElement('a')
+newElement1.setAttribute('href', '#')
+newElement1.innerText = 'Our Mission'
+let nav = document.querySelector("nav");
+nav.prepend(newElement1);
+newElement1.style.color = "green";
 
 let ctaText = document.getElementsByClassName("cta-text")[0];
 ctaText.getElementsByTagName("h1")[0].innerHTML = siteContent ["cta"]["h1"];
